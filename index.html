@@ -1,37 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>IQ Test</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>🧠 Mini IQ Test</h1>
-    <form id="iqForm">
-      <div class="question">
-        <p>1. What comes next in the sequence? <strong>2, 4, 8, 16, ?</strong></p>
-        <label><input type="radio" name="q1" value="32"> 32</label>
-        <label><input type="radio" name="q1" value="30"> 30</label>
-        <label><input type="radio" name="q1" value="36"> 36</label>
-      </div>
-      <div class="question">
-        <p>2. Which word does not belong?</p>
-        <label><input type="radio" name="q2" value="Apple"> Apple</label>
-        <label><input type="radio" name="q2" value="Banana"> Banana</label>
-        <label><input type="radio" name="q2" value="Car"> Car</label>
-      </div>
-      <div class="question">
-        <p>3. If you rearrange the letters "CIFAIPC", you would have the name of a(n)...</p>
-        <label><input type="radio" name="q3" value="Animal"> Animal</label>
-        <label><input type="radio" name="q3" value="Ocean"> Ocean</label>
-        <label><input type="radio" name="q3" value="Pacific"> Pacific</label>
-      </div>
-      <button type="button" onclick="checkAnswers()">Submit</button>
-    </form>
-    <div class="result" id="result"></div>
-  </div>
+body {
+  background: #1a1a1a;
+  color: #eee;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 30px;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+h1 {
+  text-align: center;
+  color: #00d4ff;
+}
+
+.question {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background: #00d4ff;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+button:hover {
+  background: #00c3e0;
+}
+
+.result {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #7CFC00;
+}
